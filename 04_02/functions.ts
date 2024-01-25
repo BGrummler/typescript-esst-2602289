@@ -1,16 +1,17 @@
 export function Demo() {
   type VoidingFunction = () => void;
-  type NumberFunction = (paramA: number, paramB: string) => number;
-
+  type NumberFunction = (a:string; b:number) => number;
   const myFunction: VoidingFunction = () => {
     console.log("myFunction called!");
   };
 
-  const myFunction2: NumberFunction = () => {
-    console.log("myFunction called!");
-    return 123;
+  const MyNumberFunction : NumberFunction = (a, b) => {
+    return b;
   };
 
-  myFunction2(10, "test");
+  const otherFunc = (zahl: number): string => {
+    return 'string';
+  }
   myFunction();
+  console.log(MyNumberFunction("Banana", 43770))
 }

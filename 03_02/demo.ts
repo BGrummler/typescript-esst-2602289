@@ -1,5 +1,5 @@
 export function Demo() {
-  let myString: string = "Hallo";
+  let myString: string = "stronk";
   let myNumber: number = 123;
   let myBoolean: boolean = true;
 

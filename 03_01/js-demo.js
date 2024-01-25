@@ -1,6 +1,7 @@
 export function Demo() {
   let price = 100;
 
-  const priceString = price + " EUR";
-  priceString = "hallo";
+    price = price + 'EUR';
+    const priceString = price + 'EUR';
+    priceString = 'Hallo'
 }
