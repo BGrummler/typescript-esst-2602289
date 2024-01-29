@@ -1,7 +1,8 @@
 class Person {
   static field = "Hey!";
-
-  constructor(public name: string) {}
+  
+  constructor(public name: string) {
+  }
 }
 
 export function Demo() {

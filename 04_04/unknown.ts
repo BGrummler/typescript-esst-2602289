@@ -1,11 +1,8 @@
 export function Demo() {
-  let foobar: any = { author: "David Lorenz" };
-  let foobar_unknown: unknown = { author: "David Lorenz" };
+  let foobar: any = {"Author":"B M"};
+  let foobar_unknown: unknown = {"Author":"B M"};
 
-  let myString: string;
+  let myString:string;
   myString = foobar;
-  myString = foobar_unknown; // funktioniert nicht
 
-  // unknown = keine schnittmenge mit typen
-  // any = schnittmenge mit allen typen (chamäleon)
 }

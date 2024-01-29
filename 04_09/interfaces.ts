@@ -1,27 +1,11 @@
-interface IBasePerson {
-  name: string;
+interface IPerson {
+  name:string;
 }
 
-interface IPerson extends IBasePerson {
-  sayHello: () => void;
-}
-
-interface IAge {
-  age: number;
-}
-
-class Person implements IPerson, IAge {
-  constructor(
-    public name: string,
-    public age: number,
-    private id: string
-  ) {}
-
-  sayHello() {
-    console.log("Hello!");
-  }
+class Person implements IPerson{
+  constructor(public name:string){}
 }
 
 export function Demo() {
-  const person = new Person("Fred", "ABCDEF");
+  const person = new Person();
 }

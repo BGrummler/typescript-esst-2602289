@@ -1,6 +1,6 @@
 export function Demo() {
   type VoidingFunction = () => void;
-  type NumberFunction = (a:string; b:number) => number;
+  type NumberFunction = (a:string, b:number) => number;
   const myFunction: VoidingFunction = () => {
     console.log("myFunction called!");
   };
