@@ -1,7 +1,7 @@
 export function Demo() {
-  type VehicleType = "CAR" | "BUS" | "TRUCK";
-  type VehicleId = `T_${VehicleType}_${number}`;  
-  let serialNumberCar: VehicleId = "T_CAR_599";
-  let serialNumberTruck: VehicleId = "T_TRUCK_2399";
-  let serialNumberBus: VehicleId = "T_BUS_35";
+  type VehicleType = 'CAR' | 'TRUCK' | 'BUS'
+  type VehicleID = `T_${VehicleType}_${number}`;
+  let serialNumberCar: VehicleID = "T_CAR_599";
+  let serialNumberTruck: VehicleID = "T_TRUCK_2399";
+  let serialNumberBus: VehicleID  = "T_BUS_35";
 }

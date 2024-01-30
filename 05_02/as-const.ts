@@ -1,5 +1,5 @@
 function getNameAndFavoriteNumber() {
-  return ["David", 900] as const; // (string | number)[] => [string, number]
+  return ["David", 900] as const; //(string || number)[] => [string, number]
 }
 
 export function Demo() {

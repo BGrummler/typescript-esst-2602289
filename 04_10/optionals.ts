@@ -2,18 +2,20 @@ type Restaurant = {
   name: string;
   location: string;
   priceRange: "low" | "normal" | "high";
-  comment?: string;
+  comment?: string
 };
 
 export function Demo() {
   const thaiRestaurant: Restaurant = {
-    name: "Thai Mo",
-    location: "Pluto",
-    priceRange: "normal",
-    comment: "Lecker!",
+    name:"Thai Mo",
+    location:"Pluto",
+    priceRange:"normal",
+    comment:"Soja",
   };
 
   const germanRestaurant: Partial<Restaurant> = {
-    comment: "hallo!",
+    name:"die Fritte",
+    priceRange:"low",
+    //foo:"bar"
   };
 }

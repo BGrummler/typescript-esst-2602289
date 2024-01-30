@@ -9,22 +9,23 @@ type Age = {
 export function Demo() {
   const foobar: number | string = "hallo";
   let unionObject: Age | Person = {
-    name: "Pete",
-    age: 123,
-  };
+    age:123,
+    name:"Peter",
+  }
   let intersectionObject: Age & Person = {
     age: 123,
-    name: "Pete",
-  };
+    name:"Bolle"
+  }
 
-  console.log(intersectionObject.age);
   console.log(intersectionObject.name);
+  console.log(intersectionObject.age);
 
-  if ("age" in unionObject) {
+  if ('age' in unionObject) {
     console.log(unionObject.age);
   }
 
-  if ("name" in unionObject) {
+  if ('name' in unionObject) {
     console.log(unionObject.name);
   }
+
 }
