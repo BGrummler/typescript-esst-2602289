@@ -3,5 +3,6 @@
     "target":"ESNext",
     "module":"ESNext"
   },
-  "include": ["typeof.ts"]
+  "include": ["typeof.ts"],
+  "type": "module"
 }
