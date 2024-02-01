@@ -4,6 +4,7 @@ export function Demo() {
   }
 
   type ResultOfCalculate = ReturnType<typeof calculate>;
+
   type ParametersOfCalculate = Parameters<typeof calculate>;
 
   const mwst: ParametersOfCalculate[1] = 1.19;

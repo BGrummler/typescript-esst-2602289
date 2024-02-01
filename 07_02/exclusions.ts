@@ -5,17 +5,20 @@ type ERROR_CODES =
   | "ERROR_5";
 type ServerResponse = {
   html: string;
-  errorCode: Exclude<ERROR_CODES, "ERROR_5">;
+  errorCode: Exclude<ERROR_CODES, 'ERROR_5'>;
 };
-type SuccessResponse = Omit<ServerResponse, "errorCode">; // 'errorCode' | 'html'
-type FailureResponse = Omit<ServerResponse, "html">;
+
+type SuccessResponse = Omit<ServerResponse, 'errorCode' | 'html'>;
+type FailureResponse = Omit<ServerResponse, 'html'>;
+
 
 export function Demo() {
   const success: SuccessResponse = {
-    html: "<p>Hallo</p>",
-  };
+    html:'<p>Hallo</p>'
+  }
 
   const failure: FailureResponse = {
-    errorCode: "ERROR_2",
-  };
+    errorCode: 'ERROR_2'
+  }
+
 }
