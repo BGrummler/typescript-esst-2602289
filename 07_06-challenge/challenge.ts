@@ -6,6 +6,11 @@ const ComplexFunction = () => {
 
 export function Challenge() {
   type ComplexFunctionType = typeof ComplexFunction;
-
-  type ReturnedObjectType = any;
+  type InnerFunction = ReturnType<ComplexFunctionType>;
+  type ReturnObject = ReturnType<InnerFunction>;
+  type Objectindex = ReturnObject[1];
+  type ReturnedObjectType = Objectindex;
+  const result: ReturnedObjectType = {
+      courseName: "TypeScript"
+    };
 }
