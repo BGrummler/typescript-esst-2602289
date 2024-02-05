@@ -2,15 +2,16 @@ export function Demo() {
   type Product = {
     productName: string;
     price: number;
-    details: Record<string, string | number>
+    details: Record<string, string | number>;
   };
-
+  
   const p: Product = {
     productName: 'Schaukel',
-    price: 200,
+    price: 122,
     details: {
       color: 'blue',
-      height: 100,
+      high: 100
     }
   }
 }
+  

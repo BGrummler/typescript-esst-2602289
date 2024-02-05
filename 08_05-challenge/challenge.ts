@@ -1,8 +1,9 @@
-const myFunction = (objectWithName: any) => {
+const myFunction = <Param extends {name: string}>(objectWithName: Param): Param => {
   return {
     ...objectWithName,
   };
 };
+
 
 export function Challenge() {
   const object = myFunction({

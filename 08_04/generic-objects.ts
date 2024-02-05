@@ -1,19 +1,19 @@
 export function Demo() {
-  type Product<Details = Record<string, string | number>> = {
+  type Product<Details = Record<string, string | number>>  = {
     name: string;
     details: Details;
   };
 
-  type FoodProduct = Product<{
+  type FoodProducs = Product<{
     weight: number;
     origin: string;
-  }>;
+  }>
 
-  const f: FoodProduct = {
-    name: "Banana",
+  const f: FoodProducs = {
+    name: 'Banana',
     details: {
       weight: 200,
-      origin: "Columbia",
+      origin:"columbia"
     },
   };
 
